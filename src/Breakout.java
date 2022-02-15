@@ -1,5 +1,6 @@
 import acm.graphics.GLabel;
 import acm.graphics.GObject;
+import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 import svu.csc213.Dialog;
 
@@ -16,6 +17,7 @@ public class Breakout extends GraphicsProgram {
     private int score;
     private GLabel livesLabel;
     private GLabel scoreLabel;
+    private GOval square;
 
     private int numBricksInRow;
 
@@ -171,6 +173,7 @@ public class Breakout extends GraphicsProgram {
 
     }
     //make a loss
+
     private void loss(){
         Dialog.showMessage("You Lost");
         System.exit(0);
